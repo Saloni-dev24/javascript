@@ -20,10 +20,13 @@ console.log(a);
 stu.splice(1,2)
 console.log(stu);
 
-
 stu.splice(1,0,"saloni")
 console.log(stu);
 
+stu.pop()
+console.log(stu);
 
+stu.unshift("yash")
+console.log(stu);
 
 

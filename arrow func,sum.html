@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>document</title>
+</head>
+<body>
+     <h1 tabindex="0"></h1> this is a class of key event</h1><br>
+
+    num1: <input type="text"  id="num1"><br>
+    num2: <input type="text"  id="num2">
+    <button onclick="myfunc()">add</button>
+    answer: <p id="res"></p>
+    <input type="text" onkeyup="alert(value)">
+
+  <script>
+    p=document.getElementById('res')
+    const myfunc=()=>{
+        x=parseInt(document.getElementById("num1").value);
+        y=parseInt(document.getElementById("num2").value);
+        z=x+y;
+        console.log(z)
+        p.innerText=z
+    }
+  
+  </script>
+</body>
+</html>
+hello
