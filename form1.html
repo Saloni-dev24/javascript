@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+    NAME: <input type="text" id="a"><br>
+    EMAIL: <input type="text" id="b"><br>
+    PASSWORD: <input type="text" id="p1"><br>
+    REPASSWORD: <input type="text" id="p2"><br>
+    MOBILE: <input type="text" id="no"><br>
+    <input type="submit" id="singup"><br>
+    </form>
+    <script>
+        const handlesubmit=()=>{
+            NAME=document.getElementById("a").value;
+            EMAIL=document.getElementById("b").value;
+            PASSWORD=document.getElementById("p1").value;
+            REPASSWORD=document.getElementById("p2").value;
+            MOBILE=document.getElementById("no").value;
+            if(NAME=="" ||EMAIL=="" ||PASSWORD=="" ||REPASSWORD=="" ||MOBILE==""){
+            document.getElementById("data").innerHTML="<h1>FILL ALL BOXES <h1>";
+            e.preventDefault();
+            return false;
+        }
+        else if (password!==repassword)
+        {
+            document.getElementById("data").innerHTML="<h1>password dont match";
+            e.preventDefault();
+            return false;
+        }
+        
+        else if (mobile.length !==10)
+        {
+            document.getElementById("data").innerHTML="<h1>mobile number in four digit";
+            e.preventDefault();
+            return false;
+        }
+        else if(isNaN(MOBILE)){
+            document.getElementById("data").innerHTML="<h1>please fill in digit";
+            e.preventDefault();
+            return false;
+        }
+        else{
+            return true;
+        }
+        }
+    </script>
+    
+</body>
+</html>
